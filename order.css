@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+
+nav{
+ background: red;
+}
+
+nav h1{
+    text-align: center;
+    color: #333333;
+}
+
+nav h1{
+    margin: 0;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav li{
+list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: 5px 0 5px 0 ;
+}
+.navbar li {
+    list-style: none;
+}
+
+.active{
+    color: rgb(5, 138, 255);
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .car-item {
+        width: 100%;
+    }
+}
+
+.order-card {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.order-card p{
+    margin: 5px 0;
+}
+
+.orders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .orders-grid {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+    .order-card {
+        margin: 8px 0;
+        padding: 8px;
+    }
+}

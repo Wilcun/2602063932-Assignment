@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {    
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav{
+ background: red;
+}
+
+nav h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav li{
+list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: 5px 0 5px 0 ;
+}
+.navbar li {
+    list-style: none;
+}
+
+.active{
+    color: rgb(5, 138, 255);
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1{
+    margin: 0;
+}
+
+#car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.car-item {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(50% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.car-details {
+    text-align: center;
+}
+
+input[type="text"], input[type="date"], input[type="number"] {
+    margin-top: 10px;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#summary {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+#order-list {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .car-item {
+        width: 100%;
+    }
+}

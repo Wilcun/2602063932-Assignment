@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Penyewaan Kendaraan</title>
+</head>
+<body>
+    <nav>
+        <h1>Penyewaan Kendaraan</h1>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <br>
+        <h2>Daftar Mobil</h2>
+        <div id="car-list">
+            <div class="car-item">
+                <img src="https://rejekitoyota.co.id/public/model/rejeki_toyota_calya.png" alt="Toyota Avanza">
+                <div class="car-details">
+                    <input type="checkbox" id="avanza" value="500000">
+                    <label for="avanza">Toyota Avanza (Rp 500.000 / hari)</label>
+                    <input type="date" class="start-date">
+                    <input type="number" class="duration" placeholder="Durasi (hari)">
+                </div>
+            </div>
+            <div class="car-item">
+                <img src="https://rejekitoyota.co.id/public/model/rejeki_toyota_calya.png" alt="Toyota Kijang Innova">
+                <div class="car-details">
+                    <input type="checkbox" id="innova" value="700000">
+                    <label for="innova">Toyota Kijang Innova (Rp 700.000 / hari)</label>
+                    <input type="date" class="start-date">
+                    <input type="number" class="duration" placeholder="Durasi (hari)">
+                </div>
+            </div>
+            <div class="car-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZioRu4nDcqF7ywfOpW2aF1bJKQUYvtkA9zg&s" alt="Honda HRV">
+                <div class="car-details">
+                    <input type="checkbox" id="hrv" value="600000">
+                    <label for="hrv">Honda HRV (Rp 600.000 / hari)</label>
+                    <input type="date" class="start-date">
+                    <input type="number" class="duration" placeholder="Durasi (hari)">
+                </div>
+            </div>
+            <div class="car-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZioRu4nDcqF7ywfOpW2aF1bJKQUYvtkA9zg&s" alt="Daihatsu Sigra">
+                <div class="car-details">
+                    <input type="checkbox" id="sigra" value="450000">
+                    <label for="sigra">Daihatsu Sigra (Rp 450.000 / hari)</label>
+                    <input type="date" class="start-date">
+                    <input type="number" class="duration" placeholder="Durasi (hari)">
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Formulir Pelanggan</h2>
+            <input type="text" id="customer-name" placeholder="Nama Pelanggan">
+            <button id="calculate-total">Hitung Total</button>
+            <div id="summary"></div>
+            <button id="save-order">Simpan Pemesanan</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
